@@ -1,0 +1,14 @@
+C:\Users\admindc\source\repos\moodle_api_asp.net\Moodle.API\Moodle.BLL\bin\Debug\net8.0\Moodle.BLL.deps.json
+C:\Users\admindc\source\repos\moodle_api_asp.net\Moodle.API\Moodle.BLL\bin\Debug\net8.0\Moodle.BLL.dll
+C:\Users\admindc\source\repos\moodle_api_asp.net\Moodle.API\Moodle.BLL\bin\Debug\net8.0\Moodle.BLL.pdb
+C:\Users\admindc\source\repos\moodle_api_asp.net\Moodle.API\Moodle.BLL\obj\Debug\net8.0\Moodle.BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admindc\source\repos\moodle_api_asp.net\Moodle.API\Moodle.BLL\obj\Debug\net8.0\Moodle.BLL.AssemblyInfoInputs.cache
+C:\Users\admindc\source\repos\moodle_api_asp.net\Moodle.API\Moodle.BLL\obj\Debug\net8.0\Moodle.BLL.AssemblyInfo.cs
+C:\Users\admindc\source\repos\moodle_api_asp.net\Moodle.API\Moodle.BLL\obj\Debug\net8.0\Moodle.BLL.csproj.CoreCompileInputs.cache
+C:\Users\admindc\source\repos\moodle_api_asp.net\Moodle.API\Moodle.BLL\obj\Debug\net8.0\Moodle.BLL.dll
+C:\Users\admindc\source\repos\moodle_api_asp.net\Moodle.API\Moodle.BLL\obj\Debug\net8.0\refint\Moodle.BLL.dll
+C:\Users\admindc\source\repos\moodle_api_asp.net\Moodle.API\Moodle.BLL\obj\Debug\net8.0\Moodle.BLL.pdb
+C:\Users\admindc\source\repos\moodle_api_asp.net\Moodle.API\Moodle.BLL\obj\Debug\net8.0\ref\Moodle.BLL.dll
+C:\Users\admindc\source\repos\moodle_api_asp.net\Moodle.API\Moodle.BLL\bin\Debug\net8.0\Moodle.BLL.runtimeconfig.json
+C:\Users\admindc\source\repos\moodle_api_asp.net\Moodle.API\Moodle.BLL\obj\Debug\net8.0\Moodle.BLL.genruntimeconfig.cache
+C:\Users\admindc\source\repos\moodle_api_asp.net\Moodle.API\Moodle.BLL\obj\Debug\net8.0\Moodle.BLL.csproj.AssemblyReference.cache

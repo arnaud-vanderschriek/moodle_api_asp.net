@@ -1,0 +1,14 @@
+C:\Users\admindc\source\repos\moodle_api_asp.net\Moodle.API\Moodle.Domain\bin\Debug\net8.0\Moodle.Domain.deps.json
+C:\Users\admindc\source\repos\moodle_api_asp.net\Moodle.API\Moodle.Domain\bin\Debug\net8.0\Moodle.Domain.dll
+C:\Users\admindc\source\repos\moodle_api_asp.net\Moodle.API\Moodle.Domain\bin\Debug\net8.0\Moodle.Domain.pdb
+C:\Users\admindc\source\repos\moodle_api_asp.net\Moodle.API\Moodle.Domain\obj\Debug\net8.0\Moodle.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admindc\source\repos\moodle_api_asp.net\Moodle.API\Moodle.Domain\obj\Debug\net8.0\Moodle.Domain.AssemblyInfoInputs.cache
+C:\Users\admindc\source\repos\moodle_api_asp.net\Moodle.API\Moodle.Domain\obj\Debug\net8.0\Moodle.Domain.AssemblyInfo.cs
+C:\Users\admindc\source\repos\moodle_api_asp.net\Moodle.API\Moodle.Domain\obj\Debug\net8.0\Moodle.Domain.csproj.CoreCompileInputs.cache
+C:\Users\admindc\source\repos\moodle_api_asp.net\Moodle.API\Moodle.Domain\obj\Debug\net8.0\Moodle.Domain.dll
+C:\Users\admindc\source\repos\moodle_api_asp.net\Moodle.API\Moodle.Domain\obj\Debug\net8.0\refint\Moodle.Domain.dll
+C:\Users\admindc\source\repos\moodle_api_asp.net\Moodle.API\Moodle.Domain\obj\Debug\net8.0\Moodle.Domain.pdb
+C:\Users\admindc\source\repos\moodle_api_asp.net\Moodle.API\Moodle.Domain\obj\Debug\net8.0\ref\Moodle.Domain.dll
+C:\Users\admindc\source\repos\moodle_api_asp.net\Moodle.API\Moodle.Domain\bin\Debug\net8.0\Moodle.Domain.runtimeconfig.json
+C:\Users\admindc\source\repos\moodle_api_asp.net\Moodle.API\Moodle.Domain\obj\Debug\net8.0\Moodle.Domain.genruntimeconfig.cache
+C:\Users\admindc\source\repos\moodle_api_asp.net\Moodle.API\Moodle.Domain\obj\Debug\net8.0\Moodle.Domain.csproj.AssemblyReference.cache
