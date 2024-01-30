@@ -16,34 +16,30 @@ namespace Moodle.DAL.Repositories
 
         }
 
-        public Roles? getRolesById(int userId)
+        public Roles? GetRoleById(int userId)
         {
             return _table
-                .FirstOrDefault(r => r.ID == userId);
-                            
+                .FirstOrDefault(r => r.ID == userId);               
         }
         
-        public Roles? getRolesByName(string roleName)
+        public Roles? GetRoleByName(string roleName)
         {
             return _table
                 .FirstOrDefault(r => r.RoleName == roleName);
         }
-         // Roles GetRoleByName(string roleName);
-         // void CreateRole(Roles role);
-         // void UpdateRole(Roles role);
-         // void DeleteRole(int roleId);
 
+        public void CreateRole(Roles role)
+        {
 
+        }
 
+        public void UpdateRole(Roles role)
+        {
 
-        // Voir une liste de cours.
+        }
+        public void DeleteRole(int roleId)
+        {
 
-        // M'inscrire a un cours.
-        // Voir les modules de ce cours (module est lié a un cours).
-        // Voir la date du controle lié a la fin d'un module.
-        // Voir ma courbe d'apprentissage en fonction des controles passés.
-        // Voir mes résultats.
-
-
+        }
     }
 }

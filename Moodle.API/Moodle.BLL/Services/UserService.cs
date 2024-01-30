@@ -32,12 +32,9 @@ namespace Moodle.BLL.Services
         }
 
         public void DeleteUser(int id) 
-        { 
-           // Users user = _userRepository.DeleteUser(id); // C'est içi que je dois vérifier si j'ai différente Business logique
-          /*  if(user is null)
-            {
-                throw new KeyNotFoundException();
-            }*/
+        {
+            _userRepository.DeleteUser(id);
+            
         }
     }
 }
