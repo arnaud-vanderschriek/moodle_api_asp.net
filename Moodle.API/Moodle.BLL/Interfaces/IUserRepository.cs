@@ -16,16 +16,5 @@ namespace Moodle.BLL.Interfaces
         void UpdateUser(Users user);
         void DeleteUser(int userId);
         IEnumerable<Users> GetUsersByRole(string roleName);
-
-
-
-
-        // Voir une liste de cours.
-        // M'inscrire a un cours.
-        // Voir les modules de ce cours (module est lié a un cours).
-        // Voir la date du controle lié a la fin d'un module.
-        // Voir ma courbe d'apprentissage en fonction des controles passés.
-        // Voir mes résultats. 
-
     }
 }
