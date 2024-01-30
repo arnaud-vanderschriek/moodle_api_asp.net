@@ -16,8 +16,9 @@ namespace Moodle.Domain.entities
         public string Description { get; set; } = null!;
         public int UserID { get; set; }
 
-        public virtual ICollection<Module> Modules { get; set; } = null!;
-        public virtual ICollection<Assessment> Assessments { get; set; } = null!;
-      
+        public Users User { get; set; } = null!;
+        public ICollection<LearningProgress> LearningProgress { get; set; } = null!;
+        public ICollection<Module> Modules { get; set; } = null!;
+        public ICollection<Assessment> Assessments { get; set; } = null!;
     }
 }

@@ -12,19 +12,16 @@ namespace Moodle.Domain.entities
     [Table("Users")]
     public class Users
     {
-        public int ID { get; set; }
-
+        public int Id { get; set; }
         public string UserName { get; set; } = null!;
-
         public byte[] Password { get; set; } = null!;
-
         public string Email { get; set; } = null!;
-
         public int RoleID { get; set; }
 
-        public virtual Roles Role { get; set; } = null!;
-        public virtual ICollection<AssessmentResult> AssessmentResults { get; set; } = null!;
-        public virtual ICollection<LearningProgress> LearningProgress { get; set; } = null!;
+        public Roles Role { get; set; } = null!;
+        public ICollection<Courses> Courses { get; set; } = null!;  // !!! Attention rajouté après la migration
+        public ICollection<AssessmentResult> AssessmentResults { get; set; } = null!;
+        public ICollection<LearningProgress> LearningProgress { get; set; } = null!;
 
     }
 }

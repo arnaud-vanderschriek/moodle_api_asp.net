@@ -46,6 +46,18 @@
           }
         }
       },
+      "Be.KhunLy.EF.Repository/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "7.0.13"
+        },
+        "compile": {
+          "lib/net6.0/Be.KhunLy.EF.Repository.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Be.KhunLy.EF.Repository.dll": {}
+        }
+      },
       "Humanizer.Core/2.14.1": {
         "type": "package",
         "compile": {
@@ -2012,6 +2024,7 @@
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "8.0.1",
+          "Moodle.Domain": "1.0.0",
           "System.Security.Cryptography.Algorithms": "4.3.1"
         },
         "compile": {
@@ -2025,6 +2038,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "Be.KhunLy.EF.Repository": "1.0.0",
           "Microsoft.EntityFrameworkCore": "8.0.1",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.1",
           "Moodle.BLL": "1.0.0",
@@ -2091,6 +2105,17 @@
         "azureicon.png",
         "lib/netstandard2.0/Azure.Identity.dll",
         "lib/netstandard2.0/Azure.Identity.xml"
+      ]
+    },
+    "Be.KhunLy.EF.Repository/1.0.0": {
+      "sha512": "2ygbhGrpGeI+E40j4jQaSWgZEVKog2dDqRGJ5vaOhQ2m/womH9S5apTrbkQYiSJFTDzPGzHbR3nl9pt5brMQ7g==",
+      "type": "package",
+      "path": "be.khunly.ef.repository/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        "be.khunly.ef.repository.1.0.0.nupkg.sha512",
+        "be.khunly.ef.repository.nuspec",
+        "lib/net6.0/Be.KhunLy.EF.Repository.dll"
       ]
     },
     "Humanizer.Core/2.14.1": {

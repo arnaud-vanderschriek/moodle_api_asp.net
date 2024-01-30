@@ -11,12 +11,9 @@ namespace Moodle.Domain.entities
     public class Roles
     {
         public int ID { get; set; }
-
         public string RoleName { get; set; } = null!;
-
         public string Description { get; set; } = null!;
 
-        public virtual ICollection<Users> Users { get; set; } = null!;
-      
+        public ICollection<Users> Users { get; set; } = null!;
     }
 }

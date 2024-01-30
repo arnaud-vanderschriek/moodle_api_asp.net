@@ -12,7 +12,6 @@ namespace Moodle.BLL.Infrastructure
     {
         public byte[] Hash(string password)
         {
-
             return SHA512.HashData(Encoding.UTF8.GetBytes(password));
         }
     }

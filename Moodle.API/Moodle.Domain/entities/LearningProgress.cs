@@ -18,13 +18,9 @@ namespace Moodle.Domain.entities
         public int? LessonID { get; set; }
         public DateTime? Timestamp { get; set; }
 
-        public virtual Users? User { get; set; }  = null!;
-
-        public virtual Courses? Course { get; set; }  = null!;
-
-        public virtual Module? Module { get; set; }  = null!;
-
-        public virtual Lesson? Lesson { get; set; }  = null!;
-
+        public Users? User { get; set; }  = null!;
+        public Courses? Course { get; set; }  = null!;
+        public Module? Module { get; set; }  = null!;
+        public Lesson? Lesson { get; set; }  = null!;
     }
 }

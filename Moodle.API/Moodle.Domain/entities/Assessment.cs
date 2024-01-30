@@ -14,10 +14,8 @@ namespace Moodle.Domain.entities
         public string AssessmentName { get; set; } = null!;
         public int CourseID { get; set; }
         public DateTime Deadline { get; set; }
-
-        public virtual ICollection<AssessmentResult> AssessmentResults { get; set; }  = null!;
-
-        public virtual Courses Course { get; set; }  = null!;
-
+       
+        public Courses Course { get; set; }  = null!;
+        public ICollection<AssessmentResult> AssessmentResults { get; set; }  = null!;
     }
 }

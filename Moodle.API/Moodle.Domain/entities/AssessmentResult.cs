@@ -15,8 +15,7 @@ namespace Moodle.Domain.entities
         public int UserID { get; set; }
         public int Score { get; set; }
 
-        public virtual Assessment Assessment { get; set; }  = null!;
-
-        public virtual Users User { get; set; } = null!;
+        public Assessment Assessment { get; set; }  = null!;
+        public Users User { get; set; } = null!;
     }
 }

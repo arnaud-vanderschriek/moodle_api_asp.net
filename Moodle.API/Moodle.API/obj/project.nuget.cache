@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "LyFT7ET18uRe4Oyvl1OXSDNW3dpO4Xq/b4Flg9cFKSBv3BYtOScnR3oLhq7+H4zHti4N3YR85I0ZDwma8/qVmw==",
+  "dgSpecHash": "XYsO/bsFsx04STBrnnTYXac3p3945Mc9yGdqZxQ+A9v0PAx/p+FmfxR/Kxho6i83zyJ/ewDEUk9gknzQsl7jWQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\admindc\\source\\repos\\moodle_api_asp.net\\Moodle.API\\Moodle.API\\Moodle.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\admindc\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\admindc\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
+    "C:\\Users\\admindc\\.nuget\\packages\\be.khunly.ef.repository\\1.0.0\\be.khunly.ef.repository.1.0.0.nupkg.sha512",
     "C:\\Users\\admindc\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\admindc\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
     "C:\\Users\\admindc\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\3.3.3\\microsoft.codeanalysis.analyzers.3.3.3.nupkg.sha512",

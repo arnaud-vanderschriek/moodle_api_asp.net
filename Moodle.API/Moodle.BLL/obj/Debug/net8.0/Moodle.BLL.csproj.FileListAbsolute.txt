@@ -12,3 +12,7 @@ C:\Users\admindc\source\repos\moodle_api_asp.net\Moodle.API\Moodle.BLL\obj\Debug
 C:\Users\admindc\source\repos\moodle_api_asp.net\Moodle.API\Moodle.BLL\bin\Debug\net8.0\Moodle.BLL.runtimeconfig.json
 C:\Users\admindc\source\repos\moodle_api_asp.net\Moodle.API\Moodle.BLL\obj\Debug\net8.0\Moodle.BLL.genruntimeconfig.cache
 C:\Users\admindc\source\repos\moodle_api_asp.net\Moodle.API\Moodle.BLL\obj\Debug\net8.0\Moodle.BLL.csproj.AssemblyReference.cache
+C:\Users\admindc\source\repos\moodle_api_asp.net\Moodle.API\Moodle.BLL\bin\Debug\net8.0\Moodle.Domain.dll
+C:\Users\admindc\source\repos\moodle_api_asp.net\Moodle.API\Moodle.BLL\bin\Debug\net8.0\Moodle.Domain.pdb
+C:\Users\admindc\source\repos\moodle_api_asp.net\Moodle.API\Moodle.BLL\obj\Debug\net8.0\Moodle.BLL.sourcelink.json
+C:\Users\admindc\source\repos\moodle_api_asp.net\Moodle.API\Moodle.BLL\obj\Debug\net8.0\Moodle.BLL.csproj.CopyComplete

@@ -28,7 +28,11 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\admindc\\source\\repos\\moodle_api_asp.net\\Moodle.API\\Moodle.Domain\\Moodle.Domain.csproj": {
+                "projectPath": "C:\\Users\\admindc\\source\\repos\\moodle_api_asp.net\\Moodle.API\\Moodle.Domain\\Moodle.Domain.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -120,6 +124,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Be.KhunLy.EF.Repository": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.1, )"

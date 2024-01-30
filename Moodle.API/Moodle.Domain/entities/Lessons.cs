@@ -17,9 +17,8 @@ namespace Moodle.Domain.entities
         public int ModuleID { get; set; }
         public string Content { get; set; }  = null!;
 
-        public virtual Module Module { get; set; }  = null!;
-
-        public virtual ICollection<LearningProgress> LearningProgress { get; set; }  = null!;
+        public Module Module { get; set; }  = null!;
+        public ICollection<LearningProgress> LearningProgress { get; set; }  = null!;
 
     }
 }

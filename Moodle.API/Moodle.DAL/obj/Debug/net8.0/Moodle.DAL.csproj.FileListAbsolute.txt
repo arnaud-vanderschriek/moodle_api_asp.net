@@ -17,3 +17,4 @@ C:\Users\admindc\source\repos\moodle_api_asp.net\Moodle.API\Moodle.DAL\obj\Debug
 C:\Users\admindc\source\repos\moodle_api_asp.net\Moodle.API\Moodle.DAL\obj\Debug\net8.0\Moodle.DAL.pdb
 C:\Users\admindc\source\repos\moodle_api_asp.net\Moodle.API\Moodle.DAL\obj\Debug\net8.0\Moodle.DAL.genruntimeconfig.cache
 C:\Users\admindc\source\repos\moodle_api_asp.net\Moodle.API\Moodle.DAL\obj\Debug\net8.0\ref\Moodle.DAL.dll
+C:\Users\admindc\source\repos\moodle_api_asp.net\Moodle.API\Moodle.DAL\obj\Debug\net8.0\Moodle.DAL.sourcelink.json

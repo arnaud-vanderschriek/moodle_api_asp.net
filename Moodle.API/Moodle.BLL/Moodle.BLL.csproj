@@ -15,4 +15,8 @@
     <PackageReference Include="System.Security.Cryptography.Algorithms" Version="4.3.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Moodle.Domain\Moodle.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

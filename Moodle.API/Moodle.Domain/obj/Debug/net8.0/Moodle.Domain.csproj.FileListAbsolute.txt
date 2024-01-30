@@ -12,3 +12,4 @@ C:\Users\admindc\source\repos\moodle_api_asp.net\Moodle.API\Moodle.Domain\obj\De
 C:\Users\admindc\source\repos\moodle_api_asp.net\Moodle.API\Moodle.Domain\bin\Debug\net8.0\Moodle.Domain.runtimeconfig.json
 C:\Users\admindc\source\repos\moodle_api_asp.net\Moodle.API\Moodle.Domain\obj\Debug\net8.0\Moodle.Domain.genruntimeconfig.cache
 C:\Users\admindc\source\repos\moodle_api_asp.net\Moodle.API\Moodle.Domain\obj\Debug\net8.0\Moodle.Domain.csproj.AssemblyReference.cache
+C:\Users\admindc\source\repos\moodle_api_asp.net\Moodle.API\Moodle.Domain\obj\Debug\net8.0\Moodle.Domain.sourcelink.json
