@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Moodle.DAL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ba07f6f5d1a374ce451080d62d4b6ac88e46fa16")]
 [assembly: System.Reflection.AssemblyProductAttribute("Moodle.DAL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Moodle.DAL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

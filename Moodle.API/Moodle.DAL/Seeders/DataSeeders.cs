@@ -14,7 +14,7 @@ namespace Moodle.DAL.Seeders
 
         public static IEnumerable<Users> InitUsers()
         {
-            yield return new Users() { ID = 1, UserName = "Arnaud", Password = salt.Hash("Hebentoi24")    , Email = "arnaud.vanderschrieck@gmail.com", RoleID = 1 };
+            yield return new Users() { Id = 1, UserName = "Arnaud", Password = salt.Hash("Hebentoi24")    , Email = "arnaud.vanderschrieck@gmail.com", RoleID = 1 };
         }
 
         public static IEnumerable<Roles> InitRoles()

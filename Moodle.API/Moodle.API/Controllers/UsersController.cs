@@ -12,7 +12,6 @@ namespace Moodle.API.Controllers
     public class UsersController(UserService _userService) : ControllerBase
     {
 
-        //Liste de tous les users
         [HttpGet]
         public IActionResult GetAllUsers()
         {
@@ -27,7 +26,6 @@ namespace Moodle.API.Controllers
             }
         }
 
-        //Avoir un user par son Id
         [HttpGet("{id}")]
         public IActionResult GetUserById([FromQuery] int id) 
         {   
@@ -36,7 +34,7 @@ namespace Moodle.API.Controllers
                 throw new ArgumentNullException("id");
             }
 
-            Users user = _userService.GetUserById(id);
+            Users? user = _userService.GetUserById(id);
 
             return Ok(user);
         }
@@ -56,6 +54,7 @@ namespace Moodle.API.Controllers
             try
             {
                 _userService.Delete(id);
+                return Ok();
             }
             catch (KeyNotFoundException )
             {

@@ -28,13 +28,11 @@ namespace Moodle.BLL.Services
                 Email = email, 
                 Role = role
             });
-
         }
 
-        public void DeleteUser(int id) 
+        public void Delete(int id) 
         {
             _userRepository.DeleteUser(id);
-            
         }
     }
 }
