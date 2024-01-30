@@ -35,7 +35,6 @@ namespace Moodle.API.Controllers
             }
 
             Users? user = _userService.GetUserById(id);
-
             return Ok(user);
         }
 
@@ -64,7 +63,12 @@ namespace Moodle.API.Controllers
 
 
         //Update un user
-    
+        [HttpPut("{id}")]
+
+        public IActionResult UpdateUser([FromRoute] int id, [FromBody] UserFormDTO dto)
+        {
+
+        }
 
         // Voir le/les cour(s) d'un user
         // Voir les voila quoi ... 
