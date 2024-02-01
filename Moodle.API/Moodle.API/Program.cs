@@ -3,6 +3,11 @@ using Moodle.BLL.Infrastructure;
 using Moodle.BLL.Interfaces;
 using System.IdentityModel.Tokens.Jwt;
 using Be.Khunly.Security;
+using Moodle.DAL.Repositories;
+using Moodle.BLL.Services;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -22,6 +27,26 @@ builder.Services.AddSingleton(builder.Configuration.GetSection("Jwt").Get<JwtMan
 
 builder.Services.AddScoped<IPasswordHasher, PasswordHasher>();
 
+builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<ILoginRepository, LoginRepository>();
+
+builder.Services.AddScoped<UserService>();
+builder.Services.AddScoped<SecurityService>();
+
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+.AddJwtBearer(options =>
+ {
+     options.TokenValidationParameters = new TokenValidationParameters
+     {
+         ValidateIssuer = true,
+         ValidateAudience = true,
+         ValidateLifetime = true,
+         ValidateIssuerSigningKey = true,
+         ValidIssuer = builder.Configuration["Jwt:Issuer"],
+         ValidAudience = builder.Configuration["JwtAudience"],
+         IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Signature"]))
+     };
+ });
 
 var app = builder.Build();
 

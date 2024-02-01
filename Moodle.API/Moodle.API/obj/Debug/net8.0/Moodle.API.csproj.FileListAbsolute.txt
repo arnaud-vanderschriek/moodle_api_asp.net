@@ -142,3 +142,5 @@ C:\Users\admindc\source\repos\moodle_api_asp.net\Moodle.API\Moodle.API\bin\Debug
 C:\Users\admindc\source\repos\moodle_api_asp.net\Moodle.API\Moodle.API\bin\Debug\net8.0\Moodle.Domain.pdb
 C:\Users\admindc\source\repos\moodle_api_asp.net\Moodle.API\Moodle.API\obj\Debug\net8.0\Moodle.API.sourcelink.json
 C:\Users\admindc\source\repos\moodle_api_asp.net\Moodle.API\Moodle.API\bin\Debug\net8.0\Be.KhunLy.EF.Repository.dll
+C:\Users\admindc\source\repos\moodle_api_asp.net\Moodle.API\Moodle.API\bin\Debug\net8.0\Be.Khunly.Security.dll
+C:\Users\admindc\source\repos\moodle_api_asp.net\Moodle.API\Moodle.API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

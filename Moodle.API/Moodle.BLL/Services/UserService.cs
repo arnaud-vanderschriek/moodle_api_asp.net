@@ -34,5 +34,19 @@ namespace Moodle.BLL.Services
         {
             _userRepository.DeleteUser(id);
         }
+
+
+        public void UpdateUser(int id, string username, string email) 
+        {
+
+            Users? user = _userRepository.GetUserById(id);
+            if (user == null)
+            {
+                throw new KeyNotFoundException();
+            }
+            user.Email = email;
+            user.UserName = username;
+            _userRepository.UpdateUser(user);
+        }
     }
 }

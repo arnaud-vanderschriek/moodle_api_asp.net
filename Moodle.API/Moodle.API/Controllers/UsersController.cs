@@ -27,9 +27,9 @@ namespace Moodle.API.Controllers
         }
 
         [HttpGet("{id}")]
-        public IActionResult GetUserById([FromQuery] int id) 
-        {   
-            if(id == 0)
+        public IActionResult GetUserById([FromQuery] int id)
+        {
+            if (id == 0)
             {
                 throw new ArgumentNullException("id");
             }
@@ -49,14 +49,14 @@ namespace Moodle.API.Controllers
 
         //Delete un user
         [HttpDelete("{id}")]
-        public IActionResult DeleteUser([FromQuery] int id) 
+        public IActionResult DeleteUser([FromQuery] int id)
         {
             try
             {
                 _userService.Delete(id);
                 return Ok();
             }
-            catch (KeyNotFoundException )
+            catch (KeyNotFoundException)
             {
                 return NotFound();
             }
@@ -64,8 +64,20 @@ namespace Moodle.API.Controllers
 
 
         //Update un user
-    
 
+        [HttpPut("{id}")]
+        public IActionResult UpdateUser([FromRoute] int id, [FromBody] UserDTO dto)
+        {
+            try
+            {
+                _userService.UpdateUser(id, dto.UserName, dto.Email);
+                return Ok();
+            }
+            catch(KeyNotFoundException)
+            {
+                return NotFound();
+            }
+        }
         // Voir le/les cour(s) d'un user
         // Voir les voila quoi ... 
 
