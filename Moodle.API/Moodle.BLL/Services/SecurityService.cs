@@ -11,14 +11,14 @@ namespace Moodle.BLL.Services
 {
      public class SecurityService(ILoginRepository _loginRepository, IPasswordHasher _passwordHasher)
     {
-        public Login Login(string email, string password)
+        public Login Login(string username, string password)
         {
-            Login? l = _loginRepository.Get(email);
+            Login? l = _loginRepository.Get(username);
             if(l == null)
             {
-                throw new ValidationException("Aucun user avec cet email");
+                throw new ValidationException("Aucun user avec cet identifiant");
             }
-            if(!_passwordHasher.Hash(l.Email + password).SequenceEqual(l.Password))
+            if(!_passwordHasher.Hash(l.Username + password).SequenceEqual(l.Password))
             {
                 throw new ValidationException("password non valid");
             }

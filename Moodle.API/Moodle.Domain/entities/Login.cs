@@ -11,8 +11,8 @@ namespace Moodle.Domain.entities
     public abstract class Login
     {
         public int Id { get; set; }
-        public required string Email { get; set; }
+        public required string Username { get; set; }
         public required byte[] Password { get; set; }
-        public abstract string Role { get; }
+        //public abstract string Role { get; }
     }
 }

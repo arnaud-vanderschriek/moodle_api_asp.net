@@ -13,9 +13,9 @@ namespace Moodle.DAL.Repositories
     {
         public LoginRepository(MoodleContext context) : base(context) { }
 
-        public Login? Get(string email)
+        public Login? Get(string username)
         {
-            return _table.FirstOrDefault(l => l.Email == email);
+            return _table.FirstOrDefault(l => l.Username == username);
         }
     }
 }

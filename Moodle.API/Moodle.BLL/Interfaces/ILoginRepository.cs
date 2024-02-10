@@ -9,6 +9,6 @@ namespace Moodle.BLL.Interfaces
 {
     public interface ILoginRepository
     {
-        Login? Get(string email);
+        Login? Get(string username);
     }
 }
