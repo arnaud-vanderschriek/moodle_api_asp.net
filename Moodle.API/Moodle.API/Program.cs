@@ -1,4 +1,4 @@
-using Be.Khunly.Security;
+using BE.Arn.Security;
 using Moodle.BLL.Infrastructure;
 using Moodle.BLL.Interfaces;
 using Moodle.BLL.Services;
@@ -10,6 +10,7 @@ using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using System.IdentityModel.Tokens.Jwt;
 using System.Text;
+using static BE.Arn.Security.JwtManager;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -44,7 +45,7 @@ builder.Services.AddSwaggerGen(c =>
                     Id = "Bearer"
                 }
             },
-            new string [] { }
+            new string[] { }
         }
     });
 });
