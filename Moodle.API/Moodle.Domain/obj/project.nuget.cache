@@ -1,6 +1,10 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "XXSJEzbje1atnVzaEAA+z3SjeeHqMfpFFKVxM1GA8/nZmDGxUmKC8PWYizA2b2EeEU7EW8WHCu/SumquScbLEQ==",
+=======
+  "dgSpecHash": "dp1uhWbSl0YOLOTceLhMRc1a0sL3/0N26EdgOj5GDXOF7YjZOOOCpPIv3RqDzalfq7DT7WSgSJYoThHbnK8o3Q==",
+>>>>>>> features/users
   "success": true,
   "projectFilePath": "C:\\Users\\admindc\\source\\repos\\moodle_api_asp.net\\Moodle.API\\Moodle.Domain\\Moodle.Domain.csproj",
   "expectedPackageFiles": [
