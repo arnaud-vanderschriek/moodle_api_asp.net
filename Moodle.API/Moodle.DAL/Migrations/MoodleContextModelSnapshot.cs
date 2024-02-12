@@ -93,6 +93,8 @@ namespace Moodle.DAL.Migrations
 
                     b.HasKey("ID");
 
+                    b.HasIndex("UserID");
+
                     b.ToTable("Courses");
 
                     b.HasData(
@@ -220,11 +222,11 @@ namespace Moodle.DAL.Migrations
 
             modelBuilder.Entity("Moodle.Domain.entities.Users", b =>
                 {
-                    b.Property<int>("ID")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Email")
                         .IsRequired()
@@ -241,7 +243,7 @@ namespace Moodle.DAL.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("ID");
+                    b.HasKey("Id");
 
                     b.HasIndex("RoleID");
 
@@ -250,9 +252,9 @@ namespace Moodle.DAL.Migrations
                     b.HasData(
                         new
                         {
-                            ID = 1,
+                            Id = 1,
                             Email = "arnaud.vanderschrieck@gmail.com",
-                            Password = new byte[] { 20, 87, 64, 154, 95, 211, 94, 82, 84, 57, 88, 216, 125, 143, 239, 192, 45, 8, 56, 6, 190, 71, 152, 88, 233, 55, 87, 227, 201, 146, 37, 148, 214, 1, 14, 70, 56, 157, 251, 236, 228, 160, 215, 221, 122, 238, 153, 29, 114, 181, 134, 3, 247, 107, 51, 99, 172, 9, 231, 76, 128, 182, 250, 191 },
+                            Password = new byte[] { 92, 234, 25, 31, 124, 81, 82, 232, 50, 91, 109, 190, 221, 246, 14, 194, 162, 218, 185, 191, 78, 61, 115, 178, 239, 110, 107, 112, 190, 62, 0, 136, 66, 251, 54, 26, 59, 201, 29, 13, 82, 121, 144, 164, 167, 21, 87, 161, 226, 220, 81, 151, 54, 200, 64, 239, 173, 255, 145, 44, 65, 216, 233, 210 },
                             RoleID = 1,
                             UserName = "Arnaud"
                         });
@@ -288,10 +290,21 @@ namespace Moodle.DAL.Migrations
                     b.Navigation("User");
                 });
 
+            modelBuilder.Entity("Moodle.Domain.entities.Courses", b =>
+                {
+                    b.HasOne("Moodle.Domain.entities.Users", "User")
+                        .WithMany("Courses")
+                        .HasForeignKey("UserID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("Moodle.Domain.entities.LearningProgress", b =>
                 {
                     b.HasOne("Moodle.Domain.entities.Courses", "Course")
-                        .WithMany()
+                        .WithMany("LearningProgress")
                         .HasForeignKey("CourseID");
 
                     b.HasOne("Moodle.Domain.entities.Lesson", "Lesson")
@@ -357,6 +370,8 @@ namespace Moodle.DAL.Migrations
                 {
                     b.Navigation("Assessments");
 
+                    b.Navigation("LearningProgress");
+
                     b.Navigation("Modules");
                 });
 
@@ -378,6 +393,8 @@ namespace Moodle.DAL.Migrations
             modelBuilder.Entity("Moodle.Domain.entities.Users", b =>
                 {
                     b.Navigation("AssessmentResults");
+
+                    b.Navigation("Courses");
 
                     b.Navigation("LearningProgress");
                 });

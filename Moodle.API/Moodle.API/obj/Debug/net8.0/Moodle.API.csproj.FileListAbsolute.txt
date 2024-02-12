@@ -5,7 +5,6 @@ C:\Users\admindc\source\repos\moodle_api_asp.net\Moodle.API\Moodle.API\obj\Debug
 C:\Users\admindc\source\repos\moodle_api_asp.net\Moodle.API\Moodle.API\obj\Debug\net8.0\Moodle.API.csproj.CoreCompileInputs.cache
 C:\Users\admindc\source\repos\moodle_api_asp.net\Moodle.API\Moodle.API\obj\Debug\net8.0\Moodle.API.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\admindc\source\repos\moodle_api_asp.net\Moodle.API\Moodle.API\obj\Debug\net8.0\Moodle.API.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\admindc\source\repos\moodle_api_asp.net\Moodle.API\Moodle.API\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\admindc\source\repos\moodle_api_asp.net\Moodle.API\Moodle.API\bin\Debug\net8.0\appsettings.json
 C:\Users\admindc\source\repos\moodle_api_asp.net\Moodle.API\Moodle.API\bin\Debug\net8.0\Moodle.API.exe
 C:\Users\admindc\source\repos\moodle_api_asp.net\Moodle.API\Moodle.API\bin\Debug\net8.0\Moodle.API.deps.json

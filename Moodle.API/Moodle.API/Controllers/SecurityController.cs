@@ -16,8 +16,8 @@ namespace Moodle.API.Controllers
         {
             try
             {
-                Login L = _securityService.Login(dto.Username, dto.Password);
-                string token = _jwtManager.CreateToken(L.Username, L.Id.ToString());
+                Users U = _securityService.Login(dto.Username, dto.Password);
+                string token = _jwtManager.CreateToken(U.UserName, U.Id.ToString());
                 return Ok(new { Token = token });
             }
             catch(ValidationException)

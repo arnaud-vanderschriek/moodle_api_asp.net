@@ -9,21 +9,21 @@ using System.Threading.Tasks;
 
 namespace Moodle.BLL.Services
 {
-     public class SecurityService(ILoginRepository _loginRepository, IPasswordHasher _passwordHasher)
+     public class SecurityService(IUserRepository _userRepository, IPasswordHasher _passwordHasher)
     {
-        public Login Login(string username, string password)
+        public Users Login(string username, string password)
         {
-            Login? l = _loginRepository.Get(username);
-            if(l == null)
+            Users? u = _userRepository.GetUserByUsername(username);
+            if(u == null)
             {
                 throw new ValidationException("Aucun user avec cet identifiant");
             }
-            if(!_passwordHasher.Hash(l.Username + password).SequenceEqual(l.Password))
+            if(!_passwordHasher.Hash(u.UserName + password).SequenceEqual(u.Password))
             {
                 throw new ValidationException("password non valid");
             }
 
-            return l;
+            return u;
         }
     }
 }

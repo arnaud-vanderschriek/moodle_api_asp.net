@@ -1,4 +1,5 @@
-﻿using Moodle.BLL.Interfaces;
+﻿using Moodle.BLL.Infrastructure;
+using Moodle.BLL.Interfaces;
 using Moodle.Domain.entities;
 using System;
 using System.Collections.Generic;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Moodle.BLL.Services
 {
-    public class UserService(IUserRepository _userRepository)
+    public class UserService(IUserRepository _userRepository, IPasswordHasher _passwordHasher)
     {
         public List<Users> GetAllUsers()
         {
@@ -20,11 +21,14 @@ namespace Moodle.BLL.Services
             return _userRepository.GetUserById(id);
         }
 
-        public Users AddUser(string username, string email, Roles role) 
+        public Users AddUser(string username,byte[] password, string email, Roles role) 
         {
+            //byte[] passwordHash = _passwordHasher.Hash(password);
+
             return _userRepository.CreateUser(new Users
             {
                 UserName = username,
+                Password = password,
                 Email = email, 
                 Role = role
             });

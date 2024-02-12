@@ -43,7 +43,7 @@ namespace Moodle.API.Controllers
         [HttpPost]
         public IActionResult AddUser([FromBody] UserDTO dto)
         {
-            Users user = _userService.AddUser(dto.UserName, dto.Email, dto.Role);
+            Users user = _userService.AddUser(dto.UserName, dto.Password, dto.Email, dto.Role);
             return Created("", new UserDTO(user));
         }
 

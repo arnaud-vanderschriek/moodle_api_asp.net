@@ -5,12 +5,12 @@ using Moodle.BLL.Services;
 using Moodle.DAL;
 using Moodle.DAL.Repositories;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Components.Web;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using System.IdentityModel.Tokens.Jwt;
 using System.Text;
-using static BE.Arn.Security.JwtManager;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -57,9 +57,7 @@ builder.Services.AddScoped<JwtManager>();
 builder.Services.AddSingleton(builder.Configuration.GetSection("Jwt").Get<JwtManager.JwtConfig>());
 
 builder.Services.AddScoped<IPasswordHasher, PasswordHasher>();
-
 builder.Services.AddScoped<IUserRepository, UserRepository>();
-builder.Services.AddScoped<ILoginRepository, LoginRepository>();
 
 builder.Services.AddScoped<UserService>();
 builder.Services.AddScoped<SecurityService>();
