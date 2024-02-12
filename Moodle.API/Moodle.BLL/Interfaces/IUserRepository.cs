@@ -11,7 +11,7 @@ namespace Moodle.BLL.Interfaces
     {
         List<Users> GetAllUsers();
         Users? GetUserById(int userId);
-       // Users? GetUserByUsername(string username);
+        Users? GetUserByUsername(string username);
         Users CreateUser(Users user);
         void UpdateUser(Users user);
         void DeleteUser(int userId);

@@ -18,7 +18,7 @@ namespace Moodle.DAL.Repositories
         
         public Users? GetUserById(int userId) => _table.Find(userId);
 
-      //  public Users? GetUserByUsername(string username) => _table.SingleOrDefault(u => u.UserName == username);
+         public Users? GetUserByUsername(string username) => _table.SingleOrDefault(u => u.UserName == username);
 
         public Users CreateUser(Users user)
         {
@@ -49,5 +49,7 @@ namespace Moodle.DAL.Repositories
                 .Where(u => u.Role.RoleName == roleName)
                 .ToList();
         } 
+
+            
     }
 }

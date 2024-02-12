@@ -52,6 +52,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "BE.Arn.Security": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.1, )"
@@ -62,9 +70,17 @@
               "target": "Package",
               "version": "[8.0.1, )"
             },
+            "Microsoft.IdentityModel.JsonWebTokens": {
+              "target": "Package",
+              "version": "[7.3.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.4.0, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[7.3.0, )"
             },
             "System.Security.Cryptography.Algorithms": {
               "target": "Package",
@@ -136,6 +152,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "BE.Arn.Security": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.1, )"
@@ -216,6 +236,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "BE.Arn.Security": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
             "Be.KhunLy.EF.Repository": {
               "target": "Package",
               "version": "[1.0.0, )"
@@ -303,6 +327,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "BE.Arn.Security": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.1, )"
