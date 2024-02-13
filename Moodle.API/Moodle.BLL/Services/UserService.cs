@@ -23,7 +23,6 @@ namespace Moodle.BLL.Services
 
         public Users AddUser(string username,byte[] password, string email, Roles role) 
         {
-            //byte[] passwordHash = _passwordHasher.Hash(password);
 
             return _userRepository.CreateUser(new Users
             {
