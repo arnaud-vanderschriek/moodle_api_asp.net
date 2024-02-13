@@ -11,10 +11,14 @@ namespace Moodle.Domain.entities
     [Table("Courses")]
     public class Courses
     {
-        public int ID { get; set; }
-        public string CourseName { get; set; } = null!;
+        public int Id { get; set; }
+        public string Name { get; set; } = null!;
         public string Description { get; set; } = null!;
-        public int UserID { get; set; }
+
+        public DateTime StartDate {  get; set; }
+        public DateTime EndDate {  get; set; }
+
+        public int? UserID { get; set; }
 
         public Users User { get; set; } = null!;
         public ICollection<LearningProgress> LearningProgress { get; set; } = null!;

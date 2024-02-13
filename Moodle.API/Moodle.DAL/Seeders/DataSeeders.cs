@@ -24,7 +24,7 @@ namespace Moodle.DAL.Seeders
         
         public static IEnumerable<Courses> InitCourses()
         {
-            yield return new Courses() { ID = 1, CourseName = "ASP.NET", Description = "programmation web en c#", UserID = 1 }; 
+            yield return new Courses() { Id = 1, Name = "ASP.NET", Description = "programmation web en c#", UserID = 1, StartDate = DateTime.Now, EndDate = DateTime.Today }; 
         }
 
     }

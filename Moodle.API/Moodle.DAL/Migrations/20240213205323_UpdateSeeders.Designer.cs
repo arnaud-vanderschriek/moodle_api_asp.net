@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Moodle.DAL.Migrations
 {
     [DbContext(typeof(MoodleContext))]
-    partial class MoodleContextModelSnapshot : ModelSnapshot
+    [Migration("20240213205323_UpdateSeeders")]
+    partial class UpdateSeeders
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -80,6 +83,10 @@ namespace Moodle.DAL.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<string>("CourseName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Description")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -87,14 +94,10 @@ namespace Moodle.DAL.Migrations
                     b.Property<DateTime>("EndDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<DateTime>("StartDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<int?>("UserID")
+                    b.Property<int>("UserID")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
@@ -107,10 +110,10 @@ namespace Moodle.DAL.Migrations
                         new
                         {
                             Id = 1,
+                            CourseName = "ASP.NET",
                             Description = "programmation web en c#",
                             EndDate = new DateTime(2024, 2, 13, 0, 0, 0, 0, DateTimeKind.Local),
-                            Name = "ASP.NET",
-                            StartDate = new DateTime(2024, 2, 13, 22, 18, 17, 607, DateTimeKind.Local).AddTicks(2463),
+                            StartDate = new DateTime(2024, 2, 13, 21, 53, 21, 440, DateTimeKind.Local).AddTicks(5980),
                             UserID = 1
                         });
                 });
@@ -302,7 +305,9 @@ namespace Moodle.DAL.Migrations
                 {
                     b.HasOne("Moodle.Domain.entities.Users", "User")
                         .WithMany("Courses")
-                        .HasForeignKey("UserID");
+                        .HasForeignKey("UserID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("User");
                 });

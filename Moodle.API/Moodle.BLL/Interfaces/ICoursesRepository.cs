@@ -10,5 +10,6 @@ namespace Moodle.BLL.Interfaces
     public interface ICoursesRepository
     {
         List<Courses> GetAll();
+        Courses Add(Courses courses);
     }
 }
