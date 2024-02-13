@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Moodle.BLL.Services
 {
-    public class UserService(IUserRepository _userRepository, IPasswordHasher _passwordHasher)
+    public class UserService(IUserRepository _userRepository)
     {
         public List<Users> GetAllUsers()
         {

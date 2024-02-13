@@ -63,16 +63,6 @@ namespace Moodle.API.Controllers
 
 
         //Update un user
-<<<<<<< HEAD
-=======
-        [HttpPut("{id}")]
-
-        public IActionResult UpdateUser([FromRoute] int id, [FromBody] UserFormDTO dto)
-        {
-
-        }
->>>>>>> features/users
-
         [HttpPut("{id}")]
         public IActionResult UpdateUser([FromRoute] int id, [FromBody] UserDTO dto)
         {

@@ -146,5 +146,4 @@ C:\Users\admindc\source\repos\moodle_api_asp.net\Moodle.API\Moodle.API\bin\Debug
 C:\Users\admindc\source\repos\moodle_api_asp.net\Moodle.API\Moodle.API\bin\Debug\net8.0\BE.Arn.Security.dll
 =======
 C:\Users\admindc\source\repos\moodle_api_asp.net\Moodle.API\Moodle.API\bin\Debug\net8.0\Be.Khunly.Security.dll
-C:\Users\admindc\source\repos\moodle_api_asp.net\Moodle.API\Moodle.API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 >>>>>>> features/users

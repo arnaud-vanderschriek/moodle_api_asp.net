@@ -1,10 +1,6 @@
 {
   "version": 2,
-<<<<<<< HEAD
   "dgSpecHash": "XXSJEzbje1atnVzaEAA+z3SjeeHqMfpFFKVxM1GA8/nZmDGxUmKC8PWYizA2b2EeEU7EW8WHCu/SumquScbLEQ==",
-=======
-  "dgSpecHash": "dp1uhWbSl0YOLOTceLhMRc1a0sL3/0N26EdgOj5GDXOF7YjZOOOCpPIv3RqDzalfq7DT7WSgSJYoThHbnK8o3Q==",
->>>>>>> features/users
   "success": true,
   "projectFilePath": "C:\\Users\\admindc\\source\\repos\\moodle_api_asp.net\\Moodle.API\\Moodle.Domain\\Moodle.Domain.csproj",
   "expectedPackageFiles": [
@@ -91,5 +87,12 @@
     "C:\\Users\\admindc\\.nuget\\packages\\system.threading.channels\\6.0.0\\system.threading.channels.6.0.0.nupkg.sha512",
     "C:\\Users\\admindc\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problème de lecture du fichier cache C:\\Users\\admindc\\source\\repos\\moodle_api_asp.net\\Moodle.API\\Moodle.Domain\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
