@@ -1,5 +1,4 @@
-﻿
-using D = Moodle.Domain.entities;
+﻿using D = Moodle.Domain.entities;
 
 namespace Moodle.API.DTO.Courses
 {

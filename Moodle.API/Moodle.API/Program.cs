@@ -52,6 +52,17 @@ builder.Services.AddSwaggerGen(c =>
 
 builder.Services.AddDbContext<MoodleContext>(o => o.UseSqlServer(builder.Configuration.GetConnectionString("Default")));
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAllOrigins",
+        builder =>
+        {
+            builder.AllowAnyOrigin()
+                    .AllowAnyMethod()
+                    .AllowAnyHeader();
+        });
+});
+
 builder.Services.AddScoped<JwtSecurityTokenHandler>();
 builder.Services.AddScoped<JwtManager>();
 builder.Services.AddSingleton(builder.Configuration.GetSection("Jwt").Get<JwtManager.JwtConfig>());
@@ -89,6 +100,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+app.UseCors("AllowAllOrigins");
 
 app.UseAuthorization();
 

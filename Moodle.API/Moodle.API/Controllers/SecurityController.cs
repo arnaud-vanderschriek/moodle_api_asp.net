@@ -4,6 +4,7 @@ using Moodle.BLL.Services;
 using Moodle.Domain.entities;
 using System.ComponentModel.DataAnnotations;
 using BE.Arn.Security;
+using Microsoft.AspNetCore.Cors;
 
 namespace Moodle.API.Controllers
 {
@@ -18,7 +19,7 @@ namespace Moodle.API.Controllers
             {
                 Users U = _securityService.Login(dto.Username, dto.Password);
                 string token = _jwtManager.CreateToken(U.UserName, U.Id.ToString());
-                return Ok(new { Token = token });
+                return Ok(new { user = U, Token = token });
             }
             catch(ValidationException)
             {
