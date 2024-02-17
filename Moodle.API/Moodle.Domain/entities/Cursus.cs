@@ -7,12 +7,15 @@ using System.Threading.Tasks;
 
 namespace Moodle.Domain.entities
 {
-    [Table("Roles")]
-    public class Roles
+    [Table("Cursus")]
+    public class Cursus
     {
         public int Id { get; set; }
-        public string RoleName { get; set; } = null!;
-        public string Description { get; set; } = null!;
+        public string Name { get; set; } = null!;
+        public DateTime startDate { get; set; }
+        public DateTime endDate { get; set; }
 
+
+      
     }
 }

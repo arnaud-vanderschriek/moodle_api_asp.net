@@ -12,7 +12,7 @@ namespace Moodle.API.DTO
             UserName = u.UserName;
             Password = u.Password;
             Email = u.Email;
-            Role = u.Role;
+            Role = u.Roles;
         }
 
         public int Id { get; set; }

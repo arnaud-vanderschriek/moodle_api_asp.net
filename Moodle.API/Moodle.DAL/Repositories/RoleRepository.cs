@@ -19,7 +19,7 @@ namespace Moodle.DAL.Repositories
         public Roles? GetRoleById(int userId)
         {
             return _table
-                .FirstOrDefault(r => r.ID == userId);               
+                .FirstOrDefault(r => r.Id == userId);               
         }
         
         public Roles? GetRoleByName(string roleName)

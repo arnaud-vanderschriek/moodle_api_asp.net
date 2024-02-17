@@ -29,7 +29,7 @@ namespace Moodle.BLL.Services
                 UserName = username,
                 Password = password,
                 Email = email, 
-                Role = role
+                Roles = role
             });
         }
 

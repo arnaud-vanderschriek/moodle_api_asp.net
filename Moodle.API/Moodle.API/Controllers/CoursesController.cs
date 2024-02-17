@@ -18,10 +18,11 @@ namespace Moodle.API.Controllers
         }
 
         [HttpPost]
-        public IActionResult AddCourses([FromBody] CoursesFormDTO dto)
+        public IActionResult AddCourses([FromForm] CoursesFormDTO dto)
         {
             Courses courses = _coursesService.Add(dto.Name, dto.Description, dto.startDate, dto.endDate);
             return Created("", new CoursesDTO(courses));
         }
-    }
+
+         }
 }

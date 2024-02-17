@@ -18,10 +18,13 @@ namespace Moodle.Domain.entities
         public string Email { get; set; } = null!;
         public int RoleID { get; set; }
 
-        public Roles Role { get; set; } = null!;
-        public ICollection<Courses> Courses { get; set; } = null!;  // !!! Attention rajouté après la migration
-        public ICollection<AssessmentResult> AssessmentResults { get; set; } = null!;
-        public ICollection<LearningProgress> LearningProgress { get; set; } = null!;
+        public int CursusId { get; set; }
+
+        [ForeignKey("RoleID")]
+        public Roles Roles { get; set; } = null!;
+
+        [ForeignKey("CursusId")]
+        public Cursus Cursus { get; set; } = null!;  
 
     }
 }

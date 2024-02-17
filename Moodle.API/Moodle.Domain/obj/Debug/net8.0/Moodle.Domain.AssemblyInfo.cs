@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Moodle.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+681b5c668aaa92f69d71ddfa418146429b311a1b")]
 [assembly: System.Reflection.AssemblyProductAttribute("Moodle.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Moodle.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

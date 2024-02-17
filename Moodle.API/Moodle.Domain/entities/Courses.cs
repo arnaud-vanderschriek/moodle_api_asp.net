@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
@@ -18,11 +19,16 @@ namespace Moodle.Domain.entities
         public DateTime StartDate {  get; set; }
         public DateTime EndDate {  get; set; }
 
-        public int? UserID { get; set; }
+        public int CursusId { get; set; }
 
-        public Users User { get; set; } = null!;
-        public ICollection<LearningProgress> LearningProgress { get; set; } = null!;
-        public ICollection<Module> Modules { get; set; } = null!;
-        public ICollection<Assessment> Assessments { get; set; } = null!;
-    }
+        public int UserID { get; set; }
+
+
+        [ForeignKey("UserID")]
+        public Users Users { get; set; } = null!;
+
+        [ForeignKey("CursusId")]
+        public Cursus Cursus { get; set; } = null!;
+
+    }   
 }

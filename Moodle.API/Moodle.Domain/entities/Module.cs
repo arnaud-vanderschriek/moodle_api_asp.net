@@ -7,14 +7,19 @@ using System.Threading.Tasks;
 
 namespace Moodle.Domain.entities
 {
-    [Table("Modules")]
+    [Table("Module")]
     public class Module
     {
-        public int ID { get; set; }
-        public string ModuleName { get; set; } = null!;
-        public int CourseID { get; set; }
+        public int Id { get; set; }
+        public string name { get; set; } = null!;
 
-        public ICollection<Lesson> Lessons { get; set; } = null!;
+        public DateTime startDate { get; set; }
+        public DateTime endDate { get; set; }   
+
+        public int CourseId { get; set; }
+
+        [ForeignKey("CourseId")]
         public Courses Course { get; set; } = null!;
+
     }
 }

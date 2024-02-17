@@ -10,12 +10,15 @@ namespace Moodle.Domain.entities
     [Table("AssessmentResult")]
     public class AssessmentResult
     {
-        public int ID { get; set; }
-        public int AssessmentID { get; set; }
-        public int UserID { get; set; }
+        public int Id { get; set; }
+        public int AssessmentId { get; set; }
+        public int UserId { get; set; }
         public int Score { get; set; }
 
+        [ForeignKey("AssessmentId")]
         public Assessment Assessment { get; set; }  = null!;
-        public Users User { get; set; } = null!;
+
+        [ForeignKey("UserId")]
+        public Users Users { get; set; } = null!;
     }
 }

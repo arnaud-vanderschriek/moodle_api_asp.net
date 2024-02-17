@@ -46,7 +46,7 @@ namespace Moodle.DAL.Repositories
         public IEnumerable<Users> GetUsersByRole(string roleName)
         {
             return _table
-                .Where(u => u.Role.RoleName == roleName)
+                .Where(u => u.Roles.RoleName == roleName)
                 .ToList();
         } 
 
