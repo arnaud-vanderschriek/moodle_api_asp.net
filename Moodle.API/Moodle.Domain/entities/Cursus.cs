@@ -14,8 +14,6 @@ namespace Moodle.Domain.entities
         public string Name { get; set; } = null!;
         public DateTime startDate { get; set; }
         public DateTime endDate { get; set; }
-
-
       
     }
 }
