@@ -61,6 +61,8 @@ namespace Moodle.API.Controllers
             }
         }
 
+ 
+
 
         //Update un user
         [HttpPut("{id}")]
@@ -68,7 +70,7 @@ namespace Moodle.API.Controllers
         {
             try
             {
-                _userService.UpdateUser(id, dto.UserName, dto.Email);
+                 _userService.UpdateUser(id, dto.UserName, dto.Email);
                 return Ok();
             }
             catch(KeyNotFoundException)
@@ -76,8 +78,49 @@ namespace Moodle.API.Controllers
                 return NotFound();
             }
         }
+
+        [HttpGet("{id}/courses")]
+        public IActionResult GetUserWithCourses([FromRoute] int id)
+        {
+            try
+            {
+                List<Courses> courses = _userService.GetUserWithCourses(id);
+                return Ok(courses);
+            }
+            catch(KeyNotFoundException) { return NotFound(); }    
+        }
         // Voir le/les cour(s) d'un user
         // Voir les voila quoi ... 
+
+       [HttpGet("{id}/cursus")]
+       public IActionResult GetCursusOfUser([FromRoute] int id)
+        {
+            try
+            {   
+                List<Cursus> cursus = _userService.GetCursusOfUser(id);
+                return Ok(cursus);
+            }
+            catch(KeyNotFoundException)
+            {
+                return NotFound();
+            }
+        }
+
+        [HttpGet("{Id}/module-end-dates")]
+        public IActionResult GetModuleEndDatesForUser([FromRoute] int Id)
+        {
+
+            try
+            {
+                List<Module> endDates = _userService.GetModuleEndDatesForUser(Id);
+                return Ok(endDates);
+            }
+            catch(KeyNotFoundException)
+            {
+                return NotFound();
+            }
+
+        }
 
     }
 }

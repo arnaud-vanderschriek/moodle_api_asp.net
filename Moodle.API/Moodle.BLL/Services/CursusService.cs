@@ -14,6 +14,21 @@ namespace Moodle.BLL.Services
         {
             return _cursusRepository.FindAll();
         }
+    
+        public Cursus Get(int id)
+        {
+            return _cursusRepository.Find(id);
+        }
 
+        public Cursus AddCursus(string name, DateTime startDate, DateTime endDate)
+        {
+            Cursus cursus = new Cursus() { Name = name, startDate = startDate, endDate = endDate };
+            return _cursusRepository.Add(cursus);
+        }
+
+        public void Del(int id)
+        {
+
+        }
     }
 }

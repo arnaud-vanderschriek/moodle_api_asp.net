@@ -13,10 +13,16 @@ namespace Moodle.DAL.Repositories
     {
         public CoursesRepository(MoodleContext context) : base(context) { }
 
-        public List<Courses> GetAll()
+
+        public List<Courses> GetCoursesByUserId(int cursusId)
         {
-            return _table.ToList();
+            return _table.Where(e => e.Id == cursusId).ToList();
         }
 
+        public List<Courses> FindAllByUserId(int userId)
+        {
+            return _table.Where(e => e.Id == userId).ToList();
+        }
+        
     }
 }

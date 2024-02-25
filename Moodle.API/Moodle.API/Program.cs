@@ -70,10 +70,14 @@ builder.Services.AddSingleton(builder.Configuration.GetSection("Jwt").Get<JwtMan
 builder.Services.AddScoped<IPasswordHasher, PasswordHasher>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<ICoursesRepository, CoursesRepository>();
+builder.Services.AddScoped<ICursusRepository, CursusRepository>();
+builder.Services.AddScoped<IModuleRepository, ModuleRepository>();
 
 builder.Services.AddScoped<UserService>();
 builder.Services.AddScoped<SecurityService>();
 builder.Services.AddScoped<CoursesService>();
+builder.Services.AddScoped<CursusService>();
+builder.Services.AddScoped<ModuleService>();
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 .AddJwtBearer(options =>

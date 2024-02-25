@@ -11,15 +11,16 @@ namespace Moodle.Domain.entities
     public class Module
     {
         public int Id { get; set; }
-        public string name { get; set; } = null!;
+        public string Name { get; set; } = null!;
 
-        public DateTime startDate { get; set; }
-        public DateTime endDate { get; set; }   
+        public DateTime StartDate { get; set; }
+        public DateTime EndDate { get; set; }   
 
         public int CourseId { get; set; }
 
         [ForeignKey("CourseId")]
         public Courses Course { get; set; } = null!;
 
+        public ICollection<Assessment>? Assessments { get; set; } // Relation avec Assessment
     }
 }

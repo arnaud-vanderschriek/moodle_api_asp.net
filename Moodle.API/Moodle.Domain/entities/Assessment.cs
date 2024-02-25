@@ -12,10 +12,13 @@ namespace Moodle.Domain.entities
     {
         public int Id { get; set; }
         public string Name { get; set; } = null!;
-        public int ModuleId { get; set; }
         public DateTime Deadline { get; set; }
 
+        public int ModuleId { get; set; }
         [ForeignKey("ModuleId")]
         public Module Module { get; set; }  = null!;
+
+        public ICollection<AssessmentResult>? AssessmentResults { get; set; } // Relation avec AssessmentResult
+
     }
 }

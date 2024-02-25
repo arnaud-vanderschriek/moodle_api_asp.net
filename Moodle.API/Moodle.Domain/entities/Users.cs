@@ -18,13 +18,13 @@ namespace Moodle.Domain.entities
         public string Email { get; set; } = null!;
         public int RoleID { get; set; }
 
-        public int CursusId { get; set; }
 
         [ForeignKey("RoleID")]
         public Roles Roles { get; set; } = null!;
 
-        [ForeignKey("CursusId")]
-        public Cursus Cursus { get; set; } = null!;  
+  
+        public ICollection<UserCourse>? UserCourse { get; set; }   
+        public ICollection<AssessmentResult>? AssessmentResults { get; set; } 
 
     }
 }

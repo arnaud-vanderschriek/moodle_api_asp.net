@@ -1,4 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Moodle.API.DTO;
+using Moodle.API.DTO.Cursus;
 using Moodle.BLL.Services;
 using Moodle.Domain.entities;
 
@@ -10,37 +12,50 @@ namespace Moodle.API.Controllers
     [ApiController]
     public class CursusController(CursusService _cursusService) : ControllerBase
     {
-        // GET: api/<CursusController>
         [HttpGet]
         public IActionResult Get()
         {
-            List<Cursus> cursus = _cursusService.Get();
+            try
+            {
+                List<Cursus> cursus = _cursusService.Get();
+                return Ok(cursus);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+        [HttpGet("{id}")]
+        public IActionResult Get([FromRoute] int id)
+        {
+            if(id == 0)
+            {
+                throw new ArgumentNullException("id");
+            }
+
+            Cursus cursus = _cursusService.Get(id);
             return Ok(cursus);
         }
 
-        // GET api/<CursusController>/5
-        [HttpGet("{id}")]
-        public string Get(int id)
-        {
-            return "value";
-        }
-
-        // POST api/<CursusController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public IActionResult Post([FromBody] CursusFormDTO dto)
         {
+            Cursus cursus = _cursusService.AddCursus(dto.Name, dto.startDate, dto.endDate);
+            return Created("", new CursusDTO(cursus));
         }
 
-        // PUT api/<CursusController>/5
         [HttpPut("{id}")]
         public void Put(int id, [FromBody] string value)
         {
         }
 
-        // DELETE api/<CursusController>/5
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
         }
+
+     
     }
 }
+

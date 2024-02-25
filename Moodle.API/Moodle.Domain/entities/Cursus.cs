@@ -14,6 +14,10 @@ namespace Moodle.Domain.entities
         public string Name { get; set; } = null!;
         public DateTime startDate { get; set; }
         public DateTime endDate { get; set; }
-      
+
+        public byte[]? images { get; set; }
+
+        public ICollection<Courses>? Courses { get; set; } 
+
     }
 }

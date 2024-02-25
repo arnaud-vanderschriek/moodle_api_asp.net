@@ -11,13 +11,13 @@ namespace Moodle.Domain.entities
     public class AssessmentResult
     {
         public int Id { get; set; }
-        public int AssessmentId { get; set; }
-        public int UserId { get; set; }
         public int Score { get; set; }
 
+        public int AssessmentId { get; set; }
         [ForeignKey("AssessmentId")]
         public Assessment Assessment { get; set; }  = null!;
 
+        public int UserId { get; set; }
         [ForeignKey("UserId")]
         public Users Users { get; set; } = null!;
     }

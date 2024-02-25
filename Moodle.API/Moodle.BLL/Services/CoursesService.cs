@@ -13,7 +13,7 @@ namespace Moodle.BLL.Services
       
         public List<Courses> GetAll()
         {
-           return  _coursesRepository.GetAll();
+           return  _coursesRepository.FindAll();
         }
 
         public Courses Add(string name, string description, DateTime startDate, DateTime endDate)

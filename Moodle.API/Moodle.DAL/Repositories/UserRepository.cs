@@ -12,7 +12,11 @@ namespace Moodle.DAL.Repositories
 {
     public class UserRepository : BaseRepository<Users>, IUserRepository
     {
-        public UserRepository(MoodleContext context) : base(context) { }
+        private readonly MoodleContext _dbContext;
+        public UserRepository(MoodleContext context) : base(context)
+        {
+            _dbContext = context;
+         }
 
         public List<Users> GetAllUsers() =>  _table.ToList();
         
@@ -48,8 +52,38 @@ namespace Moodle.DAL.Repositories
             return _table
                 .Where(u => u.Roles.RoleName == roleName)
                 .ToList();
-        } 
+        }
 
-            
+        public List<Courses> GetUserCourses(int userId)
+        {
+           var courses =  _dbContext.UserCourse
+            .Where(uc => uc.UserId == userId)
+            .Select(uc => uc.Course)
+            .ToList();
+
+            return courses;
+        }
+
+        public List<Cursus> GetCursus(int id)
+        {
+            var curriculums = _dbContext.UserCourse
+        .Where(uc => uc.UserId == id)
+        .Select(uc => uc.Course.Cursus)
+        .Distinct() 
+        .ToList();
+
+            return curriculums;
+        }
+
+        public List<Module> GetModuleEndDatesForUser(int id)
+        {
+             var modulesForUser = _dbContext.UserCourse
+            .Where(uc => uc.UserId == id)
+            .SelectMany(uc => uc.Course.Modules) // SelectMany pour aplatir la liste d'ID de modules
+            .Distinct()
+            .ToList();
+
+            return modulesForUser;
+        }
     }
 }

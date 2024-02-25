@@ -19,6 +19,6 @@ namespace Moodle.API.DTO
         public string UserName { get; set; }
         public byte[] Password { get; set; } = null!;
         public string Email { get; set; }
-        public Roles Role {  get; set; }    
+        public Roles Role {  get; set; }
     }
 }

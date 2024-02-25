@@ -9,18 +9,19 @@ using System.Threading.Tasks;
 
 namespace Moodle.DAL.Repositories
 {
-    public class CursusRepository:  BaseRepository<Cursus>, ICursusRepository
+    public class CursusRepository : BaseRepository<Cursus>, ICursusRepository
     {
-        public CursusRepository(MoodleContext context): base(context) { }
+        public CursusRepository(MoodleContext context) : base(context) { }
 
-      /*  public override List<Cursus> FindAll()
+        public Cursus FindCursusByUserId(int userId)
         {
-            return base.FindAll();
-        }*/
-
-        public List<Cursus> FindAll()
-        {
-            return _table.ToList();
+            return base.Find(userId);
         }
+
+        public List<Cursus> GetCursusByUserCursusId(int userCursusId)
+        {
+            return _table.Where(cursus => cursus.Id == userCursusId).ToList();
+        }
+
     }
 }

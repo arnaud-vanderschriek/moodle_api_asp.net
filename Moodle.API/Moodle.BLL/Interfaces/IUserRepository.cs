@@ -15,6 +15,10 @@ namespace Moodle.BLL.Interfaces
         Users CreateUser(Users user);
         void UpdateUser(Users user);
         void DeleteUser(int userId);
+        List<Courses> GetUserCourses(int id);
+        List<Cursus> GetCursus(int id);
+
+        List<Module> GetModuleEndDatesForUser(int id);
         IEnumerable<Users> GetUsersByRole(string roleName);
     }
 }

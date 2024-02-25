@@ -20,15 +20,12 @@ namespace Moodle.Domain.entities
         public DateTime EndDate {  get; set; }
 
         public int CursusId { get; set; }
-
-        public int UserID { get; set; }
-
-
-        [ForeignKey("UserID")]
-        public Users Users { get; set; } = null!;
-
         [ForeignKey("CursusId")]
         public Cursus Cursus { get; set; } = null!;
+
+
+        public ICollection<UserCourse>? UserCourses { get; set; }
+        public ICollection<Module>? Modules { get; set; }
 
     }   
 }

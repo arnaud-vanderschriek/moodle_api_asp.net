@@ -9,6 +9,10 @@ namespace Moodle.BLL.Interfaces
 {
     public interface ICursusRepository
     {
+        Cursus Find(params object[]? id);
         List<Cursus> FindAll();
+
+        Cursus Add(Cursus cursus);
+        List<Cursus> GetCursusByUserCursusId(int userId);
     }
 }

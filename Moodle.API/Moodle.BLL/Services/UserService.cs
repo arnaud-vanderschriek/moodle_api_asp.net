@@ -9,7 +9,12 @@ using System.Threading.Tasks;
 
 namespace Moodle.BLL.Services
 {
-    public class UserService(IUserRepository _userRepository)
+    public class UserService(
+        IUserRepository _userRepository, 
+        ICursusRepository _cursusRepository, 
+        ICoursesRepository _coursesRepository,
+        IModuleRepository _moduleRepository
+        )
     {
         public List<Users> GetAllUsers()
         {
@@ -51,5 +56,41 @@ namespace Moodle.BLL.Services
             user.UserName = username;
             _userRepository.UpdateUser(user);
         }
+
+        public List<Courses> GetUserWithCourses(int id)
+        {
+
+            List<Courses> courses = _userRepository.GetUserCourses(id);
+
+            if (courses == null)
+            {
+                throw new KeyNotFoundException();
+            }
+            return courses;
+
+        }
+
+        public List<Cursus> GetCursusOfUser(int id)
+        {
+            List<Cursus> cursus = _userRepository.GetCursus(id);
+            if (cursus == null) 
+            {
+                throw new KeyNotFoundException();
+            } 
+
+            return cursus;
+        }
+
+        public List<Module> GetModuleEndDatesForUser(int id)
+        {
+            List<Module> modulesEndDate = _userRepository.GetModuleEndDatesForUser(id);
+
+            if(modulesEndDate == null)
+            {
+                throw new KeyNotFoundException();
+            }
+            return modulesEndDate; 
+        }
+
     }
 }
