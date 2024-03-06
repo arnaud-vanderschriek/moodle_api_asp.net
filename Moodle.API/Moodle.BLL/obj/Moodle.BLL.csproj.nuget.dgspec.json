@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\admindc\\source\\repos\\moodle_api_asp.net\\Moodle.API\\Moodle.BLL\\Moodle.BLL.csproj": {}
+    "C:\\Users\\D\\Source\\Repos\\moodle_api_asp.net\\Moodle.API\\Moodle.BLL\\Moodle.BLL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\admindc\\source\\repos\\moodle_api_asp.net\\Moodle.API\\Moodle.BLL\\Moodle.BLL.csproj": {
+    "C:\\Users\\D\\Source\\Repos\\moodle_api_asp.net\\Moodle.API\\Moodle.BLL\\Moodle.BLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\admindc\\source\\repos\\moodle_api_asp.net\\Moodle.API\\Moodle.BLL\\Moodle.BLL.csproj",
+        "projectUniqueName": "C:\\Users\\D\\Source\\Repos\\moodle_api_asp.net\\Moodle.API\\Moodle.BLL\\Moodle.BLL.csproj",
         "projectName": "Moodle.BLL",
-        "projectPath": "C:\\Users\\admindc\\source\\repos\\moodle_api_asp.net\\Moodle.API\\Moodle.BLL\\Moodle.BLL.csproj",
-        "packagesPath": "C:\\Users\\admindc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\admindc\\source\\repos\\moodle_api_asp.net\\Moodle.API\\Moodle.BLL\\obj\\",
+        "projectPath": "C:\\Users\\D\\Source\\Repos\\moodle_api_asp.net\\Moodle.API\\Moodle.BLL\\Moodle.BLL.csproj",
+        "packagesPath": "C:\\Users\\D\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\D\\Source\\Repos\\moodle_api_asp.net\\Moodle.API\\Moodle.BLL\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\admindc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\D\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,16 +26,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Users\\admindc\\AppData\\Roaming\\NuGet\\": {},
-          "C:\\Users\\admindc\\source\\repos\\BE.Arn.Security\\bin\\Release": {},
-          "https://pkgs.dev.azure.com/KhunLY/DigitalCityNet2023/_packaging/Be.KhunLY/nuget/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\admindc\\source\\repos\\moodle_api_asp.net\\Moodle.API\\Moodle.Domain\\Moodle.Domain.csproj": {
-                "projectPath": "C:\\Users\\admindc\\source\\repos\\moodle_api_asp.net\\Moodle.API\\Moodle.Domain\\Moodle.Domain.csproj"
+              "C:\\Users\\D\\Source\\Repos\\moodle_api_asp.net\\Moodle.API\\Moodle.Domain\\Moodle.Domain.csproj": {
+                "projectPath": "C:\\Users\\D\\Source\\Repos\\moodle_api_asp.net\\Moodle.API\\Moodle.Domain\\Moodle.Domain.csproj"
               }
             }
           }
@@ -40,6 +42,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -81,21 +88,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\admindc\\source\\repos\\moodle_api_asp.net\\Moodle.API\\Moodle.Domain\\Moodle.Domain.csproj": {
+    "C:\\Users\\D\\Source\\Repos\\moodle_api_asp.net\\Moodle.API\\Moodle.Domain\\Moodle.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\admindc\\source\\repos\\moodle_api_asp.net\\Moodle.API\\Moodle.Domain\\Moodle.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\D\\Source\\Repos\\moodle_api_asp.net\\Moodle.API\\Moodle.Domain\\Moodle.Domain.csproj",
         "projectName": "Moodle.Domain",
-        "projectPath": "C:\\Users\\admindc\\source\\repos\\moodle_api_asp.net\\Moodle.API\\Moodle.Domain\\Moodle.Domain.csproj",
-        "packagesPath": "C:\\Users\\admindc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\admindc\\source\\repos\\moodle_api_asp.net\\Moodle.API\\Moodle.Domain\\obj\\",
+        "projectPath": "C:\\Users\\D\\Source\\Repos\\moodle_api_asp.net\\Moodle.API\\Moodle.Domain\\Moodle.Domain.csproj",
+        "packagesPath": "C:\\Users\\D\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\D\\Source\\Repos\\moodle_api_asp.net\\Moodle.API\\Moodle.Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\admindc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\D\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -103,9 +114,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Users\\admindc\\AppData\\Roaming\\NuGet\\": {},
-          "C:\\Users\\admindc\\source\\repos\\BE.Arn.Security\\bin\\Release": {},
-          "https://pkgs.dev.azure.com/KhunLY/DigitalCityNet2023/_packaging/Be.KhunLY/nuget/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
@@ -117,6 +126,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -158,7 +172,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
